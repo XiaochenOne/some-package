@@ -1,224 +1,235 @@
 msgid ""
 msgstr ""
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-08 20:45+0800\n"
-"PO-Revision-Date: 2014-03-14 21:20+0800\n"
-"Last-Translator: 穿越蓝天 < admin@nvacg.com , af_xj@hotmail.com >\n"
-"Language: cn\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: dingpengyu <dingpengyu06@gmail.com>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.4\n"
-"Project-Id-Version: \n"
-"Language-Team: \n"
+"Language: zh_CN\n"
+"X-Generator: Poedit 2.3.1\n"
 
-msgid "FTP Service"
-msgstr "FTP服务器"
+msgid "NAS"
+msgstr "网络存储"
 
-msgid "Use this page, you can share your file under web via ftp."
-msgstr "使用此页面配置FTP服务器，在互联网上共享此路由器上的文件."
+msgid ". and .. are excluded."
+msgstr ". 和 .. 将被忽略。"
 
-msgid "vsFTPd Settings"
-msgstr "vsFTPd 设置"
+msgid "0 means no limitation"
+msgstr "0 表明不限制"
 
-msgid "Global"
-msgstr "全局"
+msgid "A message will be displayed when entering a directory."
+msgstr "在进入一个新目录时将显示的消息。"
 
-msgid "Local User"
-msgstr "本地用户"
+msgid "ASCII mode"
+msgstr "ASCII 模式"
 
-msgid "Anonymous"
+msgid "Allow directory recursely list"
+msgstr "允许递归列目录"
+
+msgid "An actual local user to handle anonymous user"
+msgstr "承载匿名用户的本地用户"
+
+msgid "An actual local user to handle virtual users"
+msgstr "承载虚拟用户的本地用户"
+
+msgid "Anonymous Settings"
+msgstr "匿名用户设置"
+
+msgid "Anonymous User"
 msgstr "匿名用户"
 
-msgid "User List"
-msgstr "用户列表"
-
-msgid "Template"
-msgstr "编辑模板"
-
-msgid "FTP banner"
-msgstr "FTP问候语"
-
-msgid "Enabled"
-msgstr "启用"
-
-msgid "Max number of clients"
-msgstr "最大客户端数量"
-
-msgid "ASCII availabled"
-msgstr "使用ASCII"
-
-msgid "Data Port using 20"
-msgstr "使用20端口传输"
-
-msgid "Accept Special Cmd"
-msgstr "接受特殊指令"
-
-msgid "Allow exhaustive listing"
-msgstr "允许穷举列表"
-
-msgid "Enable DIR Message"
-msgstr "启用目录消息"
-
-msgid "Idle timeout"
-msgstr "空闲超时"
-
-msgid "Transfer timeout"
-msgstr "传输超时"
-
-msgid "Allow local member"
-msgstr "允许本地用户"
-
-msgid "Member can write"
-msgstr "本地用户可写"
-
-msgid "Allow change permissions"
-msgstr "允许更改权限"
-
-msgid "Enable chroot"
-msgstr "仅允许访问主目录"
-
-msgid "uMask for new uploads"
-msgstr "默认的文件掩码"
-
-msgid "Enable userlist"
-msgstr "启用用户列表"
-
-msgid "Userlist control type"
-msgstr "用户列表类型"
-
-msgid "allow"
-msgstr "允许"
-
-msgid "deny"
-msgstr "阻止"
-
-msgid "Allow anonymous"
-msgstr "允许匿名用户"
-
-msgid "Anonymous can upload"
-msgstr "匿名用户可写"
-
-msgid "Anonymous can create folder"
-msgstr "匿名用户可建立目录"
-
-msgid "Anonymous root"
-msgstr "匿名用户根目录"
-
-msgid "User"
-msgstr "用户"
-
-msgid "Allow IPv6"
-msgstr "允许IPv6"
-
-msgid "Enable FTP Logging"
-msgstr "启用FTP日志"
-
-msgid "Log Path"
-msgstr "日志路径"
-
-msgid "Monitor FTP session"
-msgstr "监控FTP会话"
-
-msgid "Chown User"
-msgstr "变更所有者"
-
-msgid "Active FTP Sessions"
-msgstr "活动的FTP会话"
-
-msgid "IP Address"
-msgstr "IP地址"
-
-msgid "Action"
-msgstr "动作"
-
-msgid "File"
-msgstr "文件"
-
-msgid "CONNECTED"
-msgstr "已连接"
-
-msgid "STOR"
-msgstr "存储"
-
-msgid "RETR"
-msgstr "读取"
-
-msgid "Enable Pasv Mode"
-msgstr "启用被动模式"
-
-msgid "Pasv Min Port"
-msgstr "被动模式最小端口"
-
-msgid "Pasv Max Port"
-msgstr "被动模式最大端口"
-
-msgid "There are no active ftp session."
-msgstr "当前没有活动的FTP会话"
-
-msgid "Max threads of per ip"
-msgstr "每IP最大线程数"
-
-msgid "Speed limit"
-msgstr "限速"
-
-msgid "In KB/s. 0 means unlimited."
-msgstr "以KB/s为单位,0表示不限制"
-
-msgid "The format for number likes ###, first bit for the file's Master. second bit for the Groups which Master have joined, last bit for other people. Every bit's value from 0 to 7: 4 means read, 2 means write, 1 means execute. The value of a bit is the sigma of above listed value. When a file created, the default value is 777(that means everyone can read write and execute the file,) and the vsftpd will deduct the value which you set from default value."
-msgstr "由3位8进制数组成. 第一位针对文件的所有者, 第二位针对所有者所在群组的成员, 第三位对应其它用户. 每一位中4代表可读, 2代表可写, 1代表可执行, 将需要的权限值相加得到一位. 新文件的默认权限是777(即所有人可读可写可执行), vsftpd将会从777中扣除你所设定的值."
-
-msgid "Here,you can edit the template of config file"
-msgstr "此处，你可以编辑用以生成配置文件的模板"
-
-msgid "Both Download and Upload"
+msgid "Both download and upload"
 msgstr "下载和上传"
+
+msgid "Can not be zero, default is 3"
+msgstr "不能为 0，默认为 3"
+
+msgid "Connection Settings"
+msgstr "连接设置"
+
+msgid "Connection timeout"
+msgstr "连接超时"
+
+msgid "Data Port"
+msgstr "数据端口"
+
+msgid "Data connection timeout"
+msgstr "数据连接超时"
+
+msgid "Directory message filename"
+msgstr "目录消息文件名"
 
 msgid "Download only"
 msgstr "仅下载"
 
+msgid "Enable IPv4"
+msgstr "启用 IPv4"
+
+msgid "Enable IPv6"
+msgstr "启用 IPv6"
+
+msgid "Enable PASV mode"
+msgstr "启用 PASV 模式"
+
+msgid "Enable PORT mode"
+msgstr "启用 PORT 模式"
+
+msgid "Enable directory list"
+msgstr "允许列目录"
+
+msgid "Enable directory message"
+msgstr "启用目录消息"
+
+msgid "Enable download"
+msgstr "允许下载"
+
+msgid "Enable file log"
+msgstr "启用文件日志"
+
+msgid "Enable local user"
+msgstr "启用本地用户"
+
+msgid "Enable other rights"
+msgstr "允许其它权限"
+
+msgid "Enable syslog"
+msgstr "启用系统日志"
+
+msgid "Enable upload"
+msgstr "允许上传"
+
+msgid "Enable write"
+msgstr "允许写"
+
+msgid "Enable write/mkdir"
+msgstr "允许写/创建目录"
+
+msgid "FTP Banner"
+msgstr "FTP 欢迎提示"
+
+msgid "FTP Server"
+msgstr "FTP 服务器"
+
+msgid "FTP Server - Anonymous Settings"
+msgstr "FTP 服务器 - 匿名用户设置"
+
+msgid "FTP Server - General Settings"
+msgstr "FTP 服务器 - 常规设置"
+
+msgid "FTP Server - Log Settings"
+msgstr "FTP 服务器 - 日志设置"
+
+msgid "FTP Server - Virtual User %q"
+msgstr "FTP 服务器 - 虚拟用户 %q"
+
+msgid "FTP Server - Virtual User &lt;new&gt;"
+msgstr "FTP 服务器 - 虚拟用户 &lt;新用户&gt;"
+
+msgid "FTP Server - Virtual User Settings"
+msgstr "FTP 服务器 - 虚拟用户设置"
+
+msgid "File mode umask"
+msgstr "文件权限掩码"
+
+msgid "General Settings"
+msgstr "常规设置"
+
+msgid "Global Settings"
+msgstr "全局设置"
+
+msgid "Home directory"
+msgstr "主目录"
+
+msgid "IPv4 Address"
+msgstr "IPv4 地址"
+
+msgid "IPv6 Address"
+msgstr "IPv6 地址"
+
+msgid "Idle session timeout"
+msgstr "空闲回话超时"
+
+msgid "Include rename, deletion ..."
+msgstr "包括重命名、删除 ..."
+
+msgid "Leave empty will use user's home directory"
+msgstr "留空将使用用户主目录"
+
+msgid "Listen Port"
+msgstr "监听端口"
+
+msgid "Listening Settings"
+msgstr "监听设置"
+
+msgid "Local Users"
+msgstr "本地用户"
+
+msgid "Log Settings"
+msgstr "日志设置"
+
+msgid "Log file"
+msgstr "日志文件"
+
+msgid "Max clients"
+msgstr "最大连接数"
+
+msgid "Max clients per IP"
+msgstr "同一 IP 的最大连接数"
+
+msgid "Max login fail count"
+msgstr "最大登录尝试数"
+
+msgid "Max transmit rate"
+msgstr "最大传输速率"
+
+msgid "Root directory"
+msgstr "根目录"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Show dot files"
+msgstr "显示以点开头的文件 (隐藏文件)"
+
 msgid "Upload only"
 msgstr "仅上传"
 
-msgid "Virtual User"
+msgid "Uploaded file mode will be 666 - &lt;umask&gt;; directory mode will be 777 - &lt;umask&gt;."
+msgstr "上传的文件权限将被设置为 666 - &lt;掩码&gt;；目录权限将被设置为 777 - &lt;掩码&gt;。"
+
+msgid "User Settings"
+msgstr "用户设置"
+
+msgid "User lists"
+msgstr "用户列表"
+
+msgid "Username cannot be empty"
+msgstr "用户名不能为空"
+
+msgid "When disabled, all download request will give permission denied."
+msgstr "如果禁止，所有的下载请求都将被拒绝。"
+
+msgid "When disabled, all write request will give permission denied."
+msgstr "如果禁止，所有的写类型请求都将被拒绝。"
+
+msgid "When disabled, list commands will give permission denied."
+msgstr "如果禁止，列目录命令将被拒绝。"
+
+msgid "Virtual Users"
 msgstr "虚拟用户"
 
-msgid "Enable virtual user"
-msgstr "启用虚拟用户"
+msgid "in seconds"
+msgstr "单位为秒"
 
-msgid "Enable virtual user will disable local user"
-msgstr "启用虚拟用户将禁用本地用户"
+msgid "in KB/s, 0 means no limitation"
+msgstr "单位为 KB/s，0 表明不限制"
 
-msgid "Map to local user"
-msgstr "映射到本地用户"
+msgid "Pasv Min Port"
+msgstr "Pasv 模式最小端口"
 
-msgid "Virtual User List"
-msgstr "虚拟用户列表"
-
-msgid "User Name"
-msgstr "用户名"
-
-msgid "Password"
-msgstr "密码"
-
-msgid "Root dir"
-msgstr "根目录"
-
-msgid "uMask"
-msgstr "掩码"
-
-msgid "Speed Limit"
-msgstr "限速"
-
-msgid "Download"
-msgstr "下载"
-
-msgid "Upload"
-msgstr "上传"
-
-msgid "Chown"
-msgstr "更改所有者"
-
-msgid "Unlimit"
-msgstr "不限"
+msgid "Pasv Max Port"
+msgstr "Pasv 模式最大端口"
